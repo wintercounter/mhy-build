@@ -12,10 +12,8 @@ const p = spawn(
 		'dist',
 		'--config-file',
 		path.resolve(__dirname, '.babelrc'),
-		'--include',
-		'node_modules/@mhy',
 		'--ignore',
-		'node_modules,test',
+		'node_modules,test,tests,dist,temp,tmp',
 		'--delete-dir-on-start',
 		...process.argv.slice(2)
 	], {
