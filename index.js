@@ -15,7 +15,6 @@ const p = spawn(
 		'--ignore',
 		'node_modules,test,tests,dist,temp,tmp',
 		'--delete-dir-on-start',
-		'--copy-files',
 		...process.argv.slice(2)
 	], {
 		shell: true
